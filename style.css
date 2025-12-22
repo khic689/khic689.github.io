@@ -1,0 +1,70 @@
+/* 全局設定：讓網頁看起來更現代，重置一些預設邊距 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 使用現代、乾淨的無襯線字體系統 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* 柔和的米灰色背景，不那麼刺眼 */
+    background-color: #f8f9fa;
+    /* 字體顏色使用深灰色，而非純黑，視覺較舒適 */
+    color: #333;
+    line-height: 1.6; /* 增加行高，提高閱讀性 */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 (如果螢幕夠高的話) */
+    min-height: 100vh; /* 確保至少佔滿整個螢幕高度 */
+}
+
+/* 主要容器樣式 */
+.container {
+    background-color: #fff; /* 卡片式白色背景 */
+    padding: 3rem; /* 內部留白 */
+    border-radius: 12px; /* 圓角 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 非常輕微的陰影增加層次感 */
+    text-align: center; /* 內容文字置中 */
+    max-width: 480px; /* 限制最大寬度，保持極簡感 */
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #222;
+    letter-spacing: -0.5px; /* 稍微緊湊一點的標題字距 */
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #666; /* 次要文字顏色更淺一點 */
+    margin-bottom: 2.5rem; /* 與下方按鈕保持距離 */
+}
+
+/* GitHub 按鈕樣式 */
+.btn-github {
+    display: inline-block;
+    text-decoration: none; /* 去除預設底線 */
+    background-color: #24292e; /* GitHub 的經典深色 */
+    color: #fff;
+    padding: 12px 24px; /* 按鈕內距 */
+    border-radius: 6px; /* 按鈕圓角 */
+    font-weight: 600;
+    transition: all 0.3s ease; /* 添加平滑過渡效果 */
+}
+
+/* 滑鼠懸停在按鈕上的效果 */
+.btn-github:hover {
+    background-color: #444d56; /* 顏色稍微變淺 */
+    transform: translateY(-2px); /* 輕微向上浮動 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #999;
+}
