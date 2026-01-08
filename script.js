@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 2. 重要：請修改這裡！！
     // 範例：'https://raw.githubusercontent.com/khic689/MyNotes/main/'
-    const baseUrl = 'https://raw.githubusercontent.com/khic689/你的倉庫名稱/main/';
+    const baseUrl = 'https://raw.githubusercontent.com/khic689/11401_CS203A/main/';
 
     const contentDiv = document.getElementById('markdown-content');
     const buttons = document.querySelectorAll('.btn-note');
