@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 2. 配置你的 GitHub 基本路徑
     // 格式：https://raw.githubusercontent.com/使用者名稱/倉庫名稱/分支名稱/
-    const baseUrl = 'https://raw.githubusercontent.com/khic689/你的倉庫名稱/main/';
+    const baseUrl = 'https://raw.githubusercontent.com/khic689/11401_CS203A/main/';
 
     const contentDiv = document.getElementById('markdown-content');
     const buttons = document.querySelectorAll('.btn-note');
