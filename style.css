@@ -6,10 +6,9 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f2f5;
     color: #333;
-    line-height: 1.6;
-    padding: 40px 20px; /* 增加上下間距 */
+    padding: 20px;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -17,61 +16,58 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    text-align: center;
-    max-width: 800px; /* 調大寬度，適合閱讀文字 */
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 900px;
     width: 100%;
 }
 
-h1 {
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #222;
-    letter-spacing: -0.5px;
-}
-
-.description {
-    font-size: 1.1rem;
-    color: #666;
+/* 導覽列樣式 */
+.note-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
 }
 
-.btn-github {
-    display: inline-block;
-    text-decoration: none;
+.btn-note {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    color: #555;
+}
+
+.btn-note:hover {
+    background-color: #f8f9fa;
+    border-color: #bbb;
+}
+
+.btn-note.active {
     background-color: #24292e;
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 6px;
+    border-color: #24292e;
     font-weight: 600;
-    transition: all 0.3s ease;
-    margin-bottom: 2rem;
 }
 
-.btn-github:hover {
-    background-color: #444d56;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* --- Markdown 內容專屬樣式 --- */
+/* Markdown 內容 */
 #markdown-content {
-    text-align: left; /* 筆記內容恢復靠左對齊 */
-    padding-top: 2rem;
-    border-top: 1px solid #eee;
-    margin-top: 1rem;
-}
-
-/* 讓圖片在 Markdown 中不會超出容器 */
-.markdown-body img {
-    max-width: 100%;
-    height: auto;
+    text-align: left;
+    min-height: 300px;
 }
 
 footer {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    color: #999;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
 }
+
+footer a { color: #888; text-decoration: none; }
