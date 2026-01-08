@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 2. 抓取並渲染 Markdown
     // 請將下方的網址替換成你 GitHub 檔案的 "Raw" 連結
-    const githubRawUrl = 'https://raw.githubusercontent.com/khic689/你的倉庫名稱/main/README.md';
+    const githubRawUrl = 'https://raw.githubusercontent.com/khic689/11401_CS203A/refs/heads/main/Note_Of_Array.md';
 
     async function fetchMarkdown() {
         try {
