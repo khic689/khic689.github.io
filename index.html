@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Course Home Page</title>
+    <title>My Course Notes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css">
     <link rel="stylesheet" href="style.css"> 
 </head>
@@ -12,22 +12,24 @@
     <div class="container">
         <header>
             <h1>My Course Page</h1>
+            <p class="description">點擊下方清單查看不同課程的筆記</p>
         </header>
+
+        <nav class="note-selector">
+            <button class="btn-note active" data-url="README.md">首頁介紹</button>
+            <button class="btn-note" data-url="Class01.md">第一堂課</button>
+            <button class="btn-note" data-url="Class02.md">第二堂課</button>
+            <button class="btn-note" data-url="Homework.md">作業紀錄</button>
+        </nav>
         
         <main>
-            <p class="description">Here is for showing and recording my notes of the class.</p>
-            
-            <a href="https://github.com/khic689" target="_blank" class="btn-github">
-                Visit my GitHub
-            </a>
-
             <div id="markdown-content" class="markdown-body">
-                <p style="color: #999; margin-top: 20px;">正在從 GitHub 載入筆記...</p>
+                <p style="color: #999;">請選擇一份筆記...</p>
             </div>
         </main>
 
         <footer>
-            <p>© <span id="current-year"></span> My Course Notes.</p>
+            <p>© <span id="current-year"></span> My Course Notes. | <a href="https://github.com/khic689" target="_blank">GitHub</a></p>
         </footer>
     </div>
 
