@@ -1,14 +1,31 @@
-// 等待網頁結構載入完成
 document.addEventListener('DOMContentLoaded', function() {
     
-    // 找到我們在 HTML footer 中預留的位置
+    // 1. 設定年份
     const yearSpan = document.getElementById('current-year');
-    
-    // 獲取目前的年份
     const currentYear = new Date().getFullYear();
-    
-    // 將年份填入該位置
     yearSpan.textContent = currentYear;
     
-    console.log("極簡風頁面已載入，目前年份為：" + currentYear);
+    // 2. 抓取並渲染 Markdown
+    // 請將下方的網址替換成你 GitHub 檔案的 "Raw" 連結
+    const githubRawUrl = 'https://raw.githubusercontent.com/khic689/你的倉庫名稱/main/README.md';
+
+    async function fetchMarkdown() {
+        try {
+            const response = await fetch(githubRawUrl);
+            if (!response.ok) throw new Error('無法取得檔案，請檢查連結是否正確');
+            
+            const markdownText = await response.text();
+            
+            // 使用 marked 將文字轉為 HTML 並放入容器
+            document.getElementById('markdown-content').innerHTML = marked.parse(markdownText);
+            
+            console.log("Markdown 內容已成功載入");
+        } catch (error) {
+            console.error("載入失敗:", error);
+            document.getElementById('markdown-content').innerHTML = 
+                `<p style="color: red;">載入失敗：${error.message}</p>`;
+        }
+    }
+
+    fetchMarkdown();
 });
