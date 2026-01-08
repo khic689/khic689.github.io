@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.error("發生錯誤:", error);
             contentDiv.innerHTML = `<p style="color: red; border: 1px dashed red; padding: 10px;">
-                ⚠️ 錯誤：${error.message}<br><br>
+                錯誤：${error.message}<br><br>
                 <small>請檢查瀏覽器 Console (F12) 查看詳細訊息。</small>
             </p>`;
         }
