@@ -1,73 +1,40 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* ...保留您原本的 body 和 container 設定... */
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    max-width: 900px;
-    width: 100%;
-}
-
-/* 導覽列樣式 */
 .note-selector {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
+    margin: 20px 0;
+    padding-bottom: 20px;
     border-bottom: 1px solid #eee;
 }
 
 .btn-note {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.9rem;
-    transition: all 0.2s ease;
     color: #555;
+    transition: all 0.2s;
 }
 
 .btn-note:hover {
-    background-color: #f8f9fa;
+    background-color: #f0f0f0;
     border-color: #bbb;
 }
 
 .btn-note.active {
-    background-color: #24292e;
+    background-color: #24292e; /* 變成深色背景 */
     color: #fff;
     border-color: #24292e;
-    font-weight: 600;
 }
 
-/* Markdown 內容 */
-#markdown-content {
+.markdown-body {
     text-align: left;
-    min-height: 300px;
+    margin-top: 20px;
+    padding: 20px;
+    min-height: 200px;
 }
-
-footer {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #aaa;
-}
-
-footer a { color: #888; text-decoration: none; }
